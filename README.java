@@ -5,7 +5,6 @@ class Maximumvalue
 public static void main(String args[])
 	{
 	Scanner input=new Scanner(System.in);
-        System.out.print("Enter array size:");
         int size = input.nextInt();
         int a[] = new int[size];
         for(int i = 0; i < size; i++)
