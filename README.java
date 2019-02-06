@@ -1,28 +1,26 @@
-wn below.
-
-import java.util.Scanner;
-public class Largest_Number 
+import java.io.*;
+import java.util.*;
+class Maximumvalue
 {
-    public static void main(String[] args) 
-    {
-        int n, max;
-        Scanner s = new Scanner(System.in);
-        System.out.print("Enter number of elements in the array:");
-        n = s.nextInt();
-        int a[] = new int[n];
-        System.out.println("Enter elements of array:");
-        for(int i = 0; i < n; i++)
+public static void main(String args[])
+	{
+	Scanner input=new Scanner(System.in);
+        System.out.print("Enter array size:");
+        int size = input.nextInt();
+        int a[] = new int[size];
+        for(int i = 0; i < size; i++)
         {
-            a[i] = s.nextInt();
+            a[i] = input.nextInt();
         }
-        max = a[0];
-        for(int i = 0; i < n; i++)
+        int max = a[0];
+        for(int j = 0; j < size; j++)
         {
-            if(max < a[i])
+            if(max < a[j])
             {
-                max = a[i];
+                max = a[j];
             }
         }
-        System.out.println("Maximum value:"+max);
+        System.out.println(max);
     }
 }
+
